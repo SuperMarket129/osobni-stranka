@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link rel="stylesheet" href="https://api-ssps.cajthaml.eu/file/global/css/reset_ld9mrCCm.css/%22%3E">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css/%22%3E">
+    
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0px;
+
+            overflow-x: hidden;
+        }
+        .headher
+        {
+            width:100vw;
+            height: 100px;
+            position:absolute;
+
+            background-image: url("brown_paper.png");
+            overflow: hidden;
+            background-size: auto 400px;
+            z-index: 1;
+            margin: 0px;
+        }
+        .bodybackground
+        {
+            background-image: url("pozadí.png");
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh    ;
+
+            width:100%;
+            height:1000px;
+            position: fixed;
+            z-index: -1;
+
+            display: flex;
+            justify-content:center;
+            align-items:flex-start;
+            
+        }
+        html body div 
+        {
+            display: flex;
+            justify-content: center;
+            z-index: 0;
+        }
+        .paperBox
+        {
+            width:100vw;
+            height: 2000px;
+            overflow: hidden;
+            margin: 0px;
+        }
+        .paper
+        {
+            background-image: url("paper.jpg");
+            background-repeat:repeat-y;
+            background-size: cover;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            width:60%;
+            height: 1800px;
+            z-index: 0;
+
+            margin: 0px;
+        }
+            .mainfoodsDiv
+            {
+                width: 100%;
+                height:70px;
+
+                display: flex;
+                justify-content: center;
+
+                margin-top: 140px;
+
+
+            }
+                .mainfoods
+                {
+                    width: 350px;
+                    height:58px;
+                    background-image: url("little_paper2.png");
+                    background-repeat: no-repeat;
+                    background-size: 350px 70px;
+                    text-align: center;
+
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 33px;
+                    padding-top: 12px;
+                }
+            .PicMatDiv
+            {
+                width:84%;
+                height:400px;
+                margin-top: 50px;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+                .picture
+                {
+                    width:40%;
+                    height:100%;
+                    border:3px solid black;
+
+                    background-image: url("veganská feta.png");
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+
+                }
+                .material
+                {
+                    width:55%;
+                    height:auto;
+                    margin-left: 30px;
+
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                    background-image: url("old_paper2.png");
+                    background-size: 100% 600px;
+                    background-position-y: -20px;
+
+                    padding-top: 50px;
+                }
+            .instructionsDiv
+            {
+                width:84%;
+                height:auto;;
+                margin-top: 120px;
+
+            }
+                .instructions
+                {
+                    width:250px;
+                    height:48px;
+                    background-image: url("little_paper2.png");
+                    background-size: 250px 65px;
+
+                    font-size: 25px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    padding-top: 18px;
+                    margin-left: -528px;
+                }
+            .instructionForkUser
+            {
+                width: 84%;
+                height:80px;
+                margin-top: 40px;
+
+                background-image: url("old_paper2.png");
+                background-size: 980px 450px;
+                background-position-y: 100px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .instructionorUserDiv
+                {
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    text-align: center;
+                    font-size: 18px;
+
+                    width:90%;
+                    height:auto;
+                }
+            .Gl
+            {
+                width:84%;
+                height:100px;
+
+                margin-top: 60px;
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+
+
+            }
+            .Gl:last-child
+            {
+                margin-top: 0px;
+            }
+            .footer
+            {
+                width:100vw;
+                height:50px;
+
+                background-image: url("old_paper2.png");
+                background-size: 4000px 60px;
+                background-position: 20px;
+                overflow: hidden;
+                background-repeat: no-repeat;
+                z-index: 1;
+
+                margin: 0px;
+                background-position-x: -10px;
+            }
+            .navDiv
+            {
+                width:20%;
+                height:auto;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                z-index: 0;
+                position: fixed;
+                left:0px;
+                top:100px;
+            }
+            .food
+            {
+                width: 210px;
+                height:46px;
+                margin-top: 30px;
+
+                background-image: url("little_paper2.png");
+                background-size: 210px 65px;
+                background-repeat: no-repeat;
+
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 25px;
+                padding-top: 20px;
+            }
+            .filterDiv
+            {
+                width:20%;
+                height:700px;
+                
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                position:fixed;
+                z-index: 0;
+                top: 125px;
+                left:80%;
+
+            }
+            .filter
+            {
+                width:170px;
+                height:35px;
+                margin-top: 100px;
+
+                background-image: url("little_paper2.png");
+                background-size: 170px 50px;
+                background-repeat: no-repeat;
+
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding-top: 15px;
+
+                
+            }
+            @media(max-width:426px)and (min-width:200px)
+            {
+                .navDiv
+                {
+                    display: none;
+                }
+                .filterDiv
+                {
+                    display: none;
+                }
+                .paper
+                {
+                    width: 90vw;
+                }
+                .news
+                {
+                    margin-left: 0px;
+                }
+                .instructions
+                {
+                    margin-left: 0px;
+                }
+                .thanks
+                {
+                    height:150px;
+                }
+            }
+            @media (max-width:769px) and (min-width:427px)
+            {
+                .navDiv
+                {
+                    display: none;
+                }
+                .filterDiv
+                {
+                    display: none;
+                }
+                .paper
+                {
+                    width: 90vw;
+                }
+                .news
+                {
+                    margin-left: 0px;
+                }
+                .instructions
+                {
+                    margin-left: 0px;
+                }
+                .thanks
+                {
+                    height:150px;
+                }
+                .PicMatDiv
+                {
+                    flex-direction: column;
+                }
+            }
+            
+    </style>
+</head>
+    
+<body>
+    <header>
+            <div class="headher"></div> 
+    </header>
+
+    <div class="bodybackground"></div>
+    <nav>
+        <div class="navDiv">
+            <div class="food">Polévky</div>
+            <div class="food">Hlavní jídla</div>
+            <div class="food">Saláty</div>
+            <div class="food">Dezerty</div>
+        </div>
+    </nav>
+
+    <section>
+        <div clas="paperBox">
+            <div class="paper">
+                <div class="mainfoodsDiv">
+                    <div class="mainfoods">Veganský feta sýr</div>
+                </div>
+                <div class="PicMatDiv">
+                    <div class="picture"></div>
+                    <div class="material">1 tofu</br>3 pl olivového oleje </br>3 pl citrónové šťávy </br> 1 pl jablečného octa (lze nahradit jiným octem) </br> 1 pl lahůdkového droždí </br> 1 čl sušené cibule </br> 1/2 čl sušeného česneku </br>1/4 čl sušeného kopru </br>1/2 čl oregána </br> 1,5 čl soli </br></br>volitelné: </br>1 listový salát </br>1 pl balzamika </br> 1pl olivového oleje </br> třtinový cukr </div>
+                </div>
+                <div class="instructionsDiv">
+                    <div class="instructions">Postup</div>
+                </div>
+                <div class="instructionForkUser"><div class="instructionorUserDiv">Do zavařovací sklenice dejte olej, citrónovou šťávu, ocet, lahůdkové droždí, sušenou cibuli, česnek, kopr, oregáno a sůl. Zavřete sklenici a pořádně jí protřepejte.</div></div>
+                <div class="instructionForkUser"><div class="instructionorUserDiv">Tofu pomocí utěrky co nejvíce vysušte, poté ho nakrájejte na kostky a vložte do sklenice.</div></div>
+                <div class="instructionForkUser"><div class="instructionorUserDiv">Sklenici pořádně protřepejte a dejte alespoň na tři hodiny do lednice.</div></div>
+                <div class="instructionForkUser"><div class="instructionorUserDiv">Nakrájejte salát a připravte zálivku. Smíchekte olej, balzamikový ocet a doslaďte podle chuti.</div></div>
+                <div class="instructionForkUser"><div class="instructionorUserDiv">Smíchejte salát, zálivku a tofu.</div></div>
+                <div class="Gl">Hodně štěstí:)</div>
+                <div class="Gl">Nezapomeňte se podělit o výsledky;)</div>
+            </div>
+         </div>
+    </section>
+
+    <aside class="filterDiv">
+        <form action="">
+            <div class="filter">
+                <input type="checkbox" id="filter" name="filter1" value="Vegan">
+                <id for="filter1">Vegan</id></br>
+            </div>
+            <div class="filter">
+                <input type="checkbox" id="filter" name="filter2" value="GlutenFree">
+                <id for="filter2">GlutenFree</id></br>
+            </div>
+            <div class="filter">
+            <input type="checkbox" id="filter" name="filter3" value="LactoseFree">
+            <id for="filter3">LactoseFree</id></br>
+            </div>
+        </form>
+    </aside>
+
+    <footer>
+        <div class="footer"></div>
+    </footer>
+
+</body>
+</html>
