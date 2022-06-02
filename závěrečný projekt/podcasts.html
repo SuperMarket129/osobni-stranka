@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link rel="stylesheet" href="https://api-ssps.cajthaml.eu/file/global/css/reset_ld9mrCCm.css/%22%3E">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css/%22%3E">
+    
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+
+            background-image: url("pozadí.png");
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin: 0px;
+            overflow: hidden;
+        }
+        .headher
+        {
+            width: 100vw;
+            height:55px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        .mid
+        {
+            display: flex;
+    
+            height:100vh; 
+            justify-content: center;
+            flex-direction: column;
+        }
+        .paper
+        {
+            display:flex;
+            flex-direction: column;
+            width:1000px;
+            height:550px;
+            background-color: white;
+            margin-left:auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+
+            background-image: url("paper.jpg");
+        }
+        .item
+        {
+            width: 170px;
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-top: 15px;
+        }
+        .item:nth-child(1)
+        {
+            margin-left: 145px;
+        }
+        .item:nth-child(5)
+        {
+            margin-left: 40px;
+        }
+        .logo
+        {
+            margin-left: 25px;
+            width: 150px;
+            height: 100px;
+        }
+        .flex1
+        {
+
+            width: 100%;
+            height: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
+            padding-top:20px;
+            text-align: center;
+        }
+        .flex2
+        {
+            width: 100%;
+            height:65px;
+            padding-top: 25px;
+            text-align: center;
+        }
+        .flex3
+        {
+            width:100%;
+            height:310px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+            .podcast
+            {
+                width: 28%;
+                height:90%;
+                border:2px solid black;
+
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                flex-direction: column;
+
+            }
+            .podcast:first-child
+            {
+                margin-right: 15px;
+            }
+            .podcast:last-child
+            {
+                margin-left: 15px;
+            }
+
+                .podcastlogo
+                {
+                    width: 110px;
+                    height: 110px;
+                    border: 2px solid black;
+                    margin-bottom: 30px;
+
+                    background-image: url("schola\ pragensis\ logo.png");
+                    background-size: contain;
+                }
+                .podcastlogo2
+                {
+                    width: 110px;
+                    height: 110px;
+                    border: 2px solid black;
+                    margin-bottom: 30px;
+
+                    background-image: url("praha_skolska_logo.png");
+                    background-size: contain;
+                }
+                .podcasttext
+                {
+                    width:90%;
+                    height: 32%;
+                    text-align: center;
+
+                    
+                    padding-left: 0px;
+                }
+                a:-webkit-any-link
+                {
+                    color: black;
+                    text-decoration: none;
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+                }
+        .flex4
+        {
+            width:100%;
+            height:40px;
+            margin-top: 15px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+        }
+            .button
+            {
+                height: 30px;
+                width:150px;
+                background-color: #800000; 
+                border-radius: 10px;
+                margin-left:790px;
+                margin-top: 20px;
+
+                color:white;
+                font-size:large;
+                text-align: center;
+                padding-top: 10px;
+                font-size: medium;
+            }
+            .button a 
+            {
+                color:white;
+            }
+            @media(max-width:426px)and (min-width:200px) {
+            body 
+            {
+                background-size: 1000px 2000px;
+                height:auto;
+                overflow: visible;
+            }
+            .paper
+            {
+                width:900px;
+                height:1400px;
+                margin-top: 20px;
+                margin-left: 45px;
+
+                background-size: 574px 1000px;
+                flex-direction: column;
+            }
+            .flex1
+            {
+                margin-top: 20px;
+                font-size: 30px;
+            }
+            .flex2
+            {
+                width:800px;
+                margin-left: 35px;
+            }
+            .flex3
+            {
+                flex-direction: column;
+                margin-top: 50px;
+                height: auto;
+            }
+            .podcast:first-child
+            {
+                margin-right: 0px;
+            }
+            .podcast:last-child
+            {
+                margin-left: 0px;
+            }
+            .podcast
+            {
+                margin-top: 20px;
+                width: 350px;
+                height: 350px;
+            }
+            .headher
+            {
+                width: 995px;
+                height: 60px;
+                border:2px solid green;
+            }
+            .mid
+            {
+                height:auto;  
+                width: 100vw;
+            }
+            .logo
+            {
+                display: none;
+            }
+            .item:nth-child(1)
+            {
+                margin-left: 0px;
+            }
+            .item:nth-child(5)
+            {
+                margin-left: 0px;
+            }
+            .button
+            {
+                margin-left: 600px;
+                margin-top: 10px;
+
+                width: 250px;
+                height: 40px;
+                font-size: 20px;
+                padding-top: 10px;
+            }
+            .text
+            {
+               text-align: center;
+               margin-left: 5px;
+               margin-top: 10px;
+            }
+            .about
+            {
+                display: flex;
+                text-align: center;
+                margin-left: -50px;
+                width:400px;
+                padding-top:0px;
+                margin-top: 10px;
+            }
+            .logoBot
+            {
+                z-index: 2;
+                width:90px;
+                height:80px;
+
+                display: flex;
+                background-image: url("logo.png");
+                background-size: 90px 80px;
+                margin-bottom: 5px;
+                margin-top: 12px;
+                margin-left: 250px;
+                margin-right: auto;
+            }
+        }
+
+        @media (max-width:769px) and (min-width:427px)
+        {
+            .headher
+            {
+                width: 998px;
+            }
+            .item:nth-child(1)
+            {
+                margin-left: 0px;
+            }
+            body
+            {
+                background-size: 1000px 1400px;
+                
+                height:auto;   
+                overflow: visible;             
+            }
+            .mid
+            {
+                width: 100px;
+                height:auto
+            }
+            .paper
+            {
+                margin-top: 130px;
+                margin-bottom: 60px;
+            }
+            .item:nth-child(2)
+            {
+                margin-left: -30px;
+            }
+            .item:nth-child(3)
+            {
+                margin-left: -30px;
+            }
+            .item:nth-child(4)
+            {
+            margin-left: -20px;
+            }
+            .logo
+            {
+                margin-left: -15px;
+            }
+        }
+    </style>
+
+</head>
+    
+<body>
+    <header>
+        <div class="headher">
+            <div class="item"><strong><a href="index.html">o mně</a></strong></div>
+            <div class="item"><a href="podcasts.html">podcasty</a></div>
+            <div class="item"><a href="blog.html">blog</a></div>
+            <img class="logo" src="logo.png">
+            <div class="item"><a href="skils.html">zkušenosti</a></div>
+            <div class="item"><a href="contact.html">kontakt</a></div>
+        </div>
+    </header> 
+    
+    <div class="mid">
+        <div class="paper">
+            <div class="flex1">PODCASTY</div>
+            <div class="flex2">Jelikož jsem exrovert, který se nekutečně rád baví s lidmi, začla jsem nahrávat podcasty pro Prahu školkou a Scholu Pragensis v podcastovém studiu na SSPŠ. Budu ráda když si poslechnete nějaký z mých podcastů a nějaký vás třeba i zaujme.</div>
+            <div class="flex3">
+                <div class="podcast">
+                    <div class="podcastlogo"></div>
+                    <div class="podcasttext"><a href=""><strong>Rozhovor s Marley KKT: Nechtěl jsem jít na filmařinu, ale nakonec se mi to líbí</strong></a></div>
+                </div>
+                <div class="podcast">
+                    <div class="podcastlogo2"></div>
+                    <div class="podcasttext"><a href=""><strong>Rozhovor s Adamem Lattou: Výdělěk z reselingu bot</strong></a></div>
+                </div>
+                <div class="podcast">
+                    <div class="podcastlogo"></div>
+                    <div class="podcasttext"><a href=""><strong>Rozhovor s Ondrou Hlaváčem: Já kradu a lidé mi za to platí</strong></a></div>
+                </div>
+            </div>
+                <div class="button"><a href=""><b>Více >></b></a></div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

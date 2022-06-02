@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link rel="stylesheet" href="https://api-ssps.cajthaml.eu/file/global/css/reset_ld9mrCCm.css/%22%3E">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css/%22%3E">
+    
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0px;
+        }
+        .headher
+        {
+            width:100vw;
+            height: 100px;
+            position:absolute;
+
+            background-image: url("brown_paper.png");
+            overflow: hidden;
+            background-size: auto 400px;
+            z-index: 1;
+            margin: 0px;
+        }
+        .bodybackground
+        {
+            background-image: url("pozadí.png");
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh    ;
+
+            width:100%;
+            height:1000px;
+            position: fixed;
+            z-index: -1;
+
+            display: flex;
+            justify-content:center;
+            align-items:flex-start;
+            
+        }
+        html body div 
+        {
+            display: flex;
+            justify-content: center;
+            z-index: 0;
+        }
+        .paperBox
+        {
+            width:100vw;
+            height: 2000px;
+            overflow: hidden;
+            margin: 0px;
+        }
+        .paper
+        {
+            background-image: url("paper.jpg");
+            background-repeat:repeat-y;
+            background-size: cover;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            width:60%;
+            height: 2200px;
+            z-index: 0;
+
+            margin: 0px;
+        }
+            .welcome
+            {
+                width: 84%;
+                height: 500px;
+
+               display: flex;
+               justify-content: center;
+
+                margin-top: 150px;
+                background-image: url("old_paper2.png");
+                background-size: 780px 500px;
+            }
+            .welcomepic
+            {
+                width:50%;
+                height:100%;
+
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .welcomePicPhoto
+            {
+                width:70%;
+                height:75%;
+                border:2px solid black;
+                background-image: url("profil_photo.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .welcometext
+            {
+                width:50%;
+                height: 100%;
+
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+                .welcometextInside
+                {
+                    width:78%;
+                    height:75%;
+                    padding-top: 14%;
+
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    text-align: left;
+                    font-size: 20px;
+                }
+
+            .newsDiv
+            {
+                width:84%;
+                height:auto;;
+                margin-top: 130px;
+            }
+            .news
+            {
+                width:250px;
+                height:48px;
+                background-image: url("little_paper2.png");
+                background-size: 250px 65px;
+
+                font-size: 25px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding-top: 18px;
+                margin-left: -528px;
+            }
+            .newsRecipe
+            {
+                width: 84%;
+                height: 450px;
+
+               display: flex;
+               justify-content: center;
+
+                margin-top: 70px;
+                background-image: url("old_paper2.png");
+                background-size: 780px 500px;
+            }
+            .feedbackDiv
+            {
+                width:84%;
+                height:auto;
+                margin-top: 130px;
+                margin-bottom: 50px;
+            }
+            .feedback
+            {
+                width:250px;
+                height:48px;
+                background-image: url("little_paper2.png");
+                background-size: 250px 65px;
+                background-repeat: no-repeat;
+
+                font-size: 25px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding-top: 18px;
+                margin-left: -528px;
+            }
+            .feedbacFrkUser
+            {
+                width: 84%;
+                height:80px;
+                margin-top: 20px;
+
+                background-image: url("old_paper2.png");
+                background-size: 780px 450px;
+                background-position-y: 100px;
+            }
+            .thanks
+            {
+                width:84%;
+                height:100px;
+
+                margin-top: 60px;
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+
+
+            }
+            .footer
+            {
+                width:100vw;
+                height:50px;
+
+                background-image: url("old_paper2.png");
+                background-size: 4000px 60px;
+                background-position: 20px;
+                overflow: hidden;
+                background-repeat: no-repeat;
+                z-index: 1;
+
+                margin: 0px;
+                background-position-x: -10px;
+            }
+            .navDiv
+            {
+                width:20%;
+                height:auto;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                z-index: 0;
+                position: fixed;
+                left:0px;
+                top:100px;
+            }
+            .food
+            {
+                width: 210px;
+                height:46px;
+                margin-top: 30px;
+
+                background-image: url("little_paper2.png");
+                background-size: 210px 65px;
+                background-repeat: no-repeat;
+
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 25px;
+                padding-top: 20px;
+            }
+            .filterDiv
+            {
+                width:20%;
+                height:700px;
+                
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                position:fixed;
+                z-index: 0;
+                top: 125px;
+                left:80%;
+
+            }
+            .filter
+            {
+                width:170px;
+                height:35px;
+                margin-top: 100px;
+
+                background-image: url("little_paper2.png");
+                background-size: 170px 50px;
+                background-repeat: no-repeat;
+
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding-top: 15px;
+
+                
+            }
+            @media(max-width:426px)and (min-width:200px)
+            {
+                .navDiv
+                {
+                    display: none;
+                }
+                .filterDiv
+                {
+                    display: none;
+                }
+                .paper
+                {
+                    width: 90vw;
+                }
+                .news
+                {
+                    margin-left: 0px;
+                }
+                .feedback
+                {
+                    margin-left: 0px;
+                }
+                .thanks
+                {
+                    height:150px;
+                }
+            }
+            @media (max-width:769px) and (min-width:427px)
+            {
+                .navDiv
+                {
+                    display: none;
+                }
+                .filterDiv
+                {
+                    display: none;
+                }
+                .paper
+                {
+                    width: 90vw;
+                }
+                .news
+                {
+                    margin-left: 0px;
+                }
+                .feedback
+                {
+                    margin-left: 0px;
+                }
+                .thanks
+                {
+                    height:150px;
+                }
+            }
+            
+    </style>
+</head>
+    
+<body>
+    <header>
+            <div class="headher"></div> 
+    </header>
+    <div class="bodybackground"></div>
+    <nav>
+        <div class="navDiv">
+            <div class="food">Polévky</div>
+            <div class="food">Hlavní jídla</div>
+            <div class="food">Saláty</div>
+            <div class="food">Dezerty</div>
+        </div>
+    </nav>
+    <section>
+        <div clas="paperBox">
+            <div class="paper">
+                    <div class="welcome">
+                        <div class="welcomepic">
+                            <div class="welcomePicPhoto"></div>
+                        </div>
+                        <div class="welcometext">
+                            <div class="welcometextInside">Vítejte na mém blogu,</br></br> jehož účelem je inspirovat lidi, co se snaží začít straovat jinak a netuší jak na to, nebo ukázat lidem, co o této možnosti ještě neuvažovali, že to jde a není to takové utrpení, jak se říká. Přeji vám ať čas, který strávíte na této stránce užijete a odnesete si z toho něco užitečného pro vás.</br></br>Vaše,</br>Markéta </div>
+                        </div>
+                    </div>
+                    <div class="newsDiv">
+                        <div class="news"><strong><i>Nejnovější</i></strong></div>
+                    </div>
+                    <div class="newsRecipe"></div>
+                    <div class="feedbackDiv">
+                        <div class="feedback"><strong><i>Zpětná vazba</i></strong></div>
+                    </div>
+                    <div class="feedbacFrkUser"></div>
+                    <div class="feedbacFrkUser"></div>
+                    <div class="feedbacFrkUser"></div>
+                    <div class="feedbacFrkUser"></div>
+                    <div class="thanks">Děkuji všem za zpětnou vazbu, budu ráda za všechny návrhy na vylepšení blogu :)</div>
+
+            </div>
+         </div>
+    </section>
+    <aside class="filterDiv">
+        <form action="">
+            <div class="filter">
+                <input type="checkbox" id="filter" name="filter1" value="Vegan">
+                <id for="filter1">Vegan</id></br>
+            </div>
+            <div class="filter">
+                <input type="checkbox" id="filter" name="filter2" value="GlutenFree">
+                <id for="filter2">GlutenFree</id></br>
+            </div>
+            <div class="filter">
+            <input type="checkbox" id="filter" name="filter3" value="LactoseFree">
+            <id for="filter3">LactoseFree</id></br>
+            </div>
+        </form>
+    </aside>
+
+    <footer>
+        <div class="footer"></div>
+    </footer>
+
+</body>
+</html>

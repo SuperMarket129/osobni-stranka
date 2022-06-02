@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link rel="stylesheet" href="https://api-ssps.cajthaml.eu/file/global/css/reset_ld9mrCCm.css/%22%3E">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css/%22%3E">
+    
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0px;
+        }
+        .headher
+        {
+            width:100vw;
+            height: 100px;
+            position:absolute;
+
+            background-image: url("brown_paper.png");
+            overflow: hidden;
+            background-size: auto 400px;
+            z-index: 1;
+            margin: 0px;
+        }
+        .bodybackground
+        {
+            background-image: url("pozadí.png");
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh    ;
+
+            width:100%;
+            height:1000px;
+            position: fixed;
+            z-index: -1;
+
+            display: flex;
+            justify-content:center;
+            align-items:flex-start;
+            
+        }
+        html body div 
+        {
+            display: flex;
+            justify-content: center;
+            z-index: 0;
+        }
+        .paperBox
+        {
+            width:100vw;
+            height: 2000px;
+            overflow: hidden;
+            margin: 0px;
+        }
+        .paper
+        {
+            background-image: url("paper.jpg");
+            background-repeat:repeat-y;
+            background-size: cover;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            width:60%;
+            height: 2200px;
+            z-index: 0;
+
+            margin: 0px;
+        }
+            .mainfoodsDiv
+            {
+                width: 100%;
+                height:70px;
+
+                display: flex;
+                justify-content: center;
+
+                margin-top: 140px;
+
+
+            }
+                .mainfoods
+                {
+                    width: 350px;
+                    height:58px;
+                    background-image: url("little_paper2.png");
+                    background-repeat: no-repeat;
+                    background-size: 350px 70px;
+                    text-align: center;
+
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 33px;
+                    padding-top: 12px;
+                }
+            .foodPreview
+            {
+                width: 84%;
+                height: 450px;
+
+                display: flex;
+                justify-content: center;
+
+                margin-top: 70px;
+                background-image: url("old_paper2.png");
+                background-repeat: no-repeat;
+
+
+                
+            }
+            .footer
+            {
+                width:100vw;
+                height:50px;
+
+                background-image: url("old_paper2.png");
+                background-size: 4000px 60px;
+                background-position: 20px;
+                overflow: hidden;
+                background-repeat: no-repeat;
+                z-index: 1;
+
+                margin: 0px;
+                background-position-x: -10px;
+            }
+            .navDiv
+            {
+                width:20%;
+                height:auto;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                z-index: 0;
+                position: fixed;
+                left:0px;
+                top:100px;
+            }
+            .food
+            {
+                width: 210px;
+                height:46px;
+                margin-top: 30px;
+
+                background-image: url("little_paper2.png");
+                background-size: 210px 65px;
+                background-repeat: no-repeat;
+
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 25px;
+                padding-top: 20px;
+            }
+            .filterDiv
+            {
+                width:20%;
+                height:700px;
+                
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                position:fixed;
+                z-index: 0;
+                top: 125px;
+                left:80%;
+
+            }
+            .filter
+            {
+                width:170px;
+                height:35px;
+                margin-top: 100px;
+
+                background-image: url("little_paper2.png");
+                background-size: 170px 50px;
+                background-repeat: no-repeat;
+
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding-top: 15px;
+
+                
+            }
+            @media(max-width:426px)and (min-width:200px) {
+                .food
+                {
+                    display: none;
+                }
+                .filterDiv
+                {
+                    display: none;
+                }
+                div.paper 
+                {
+                    width: 90vw;
+
+                }
+            }
+            @media (max-width:769px) and (min-width:427px)
+            {
+                .food
+                {
+                    display: none;
+                }
+                .filterDiv
+                {
+                    display: none;
+                }
+                div.paper
+                {
+                    width:90vw;
+                }
+            }
+
+            
+    </style>
+</head>
+    
+<body>
+    <header>
+            <div class="headher"></div> 
+    </header>
+
+    <div class="bodybackground"></div>
+    <nav>
+        <div class="navDiv">
+            <div class="food">Polévky</div>
+            <div class="food">Hlavní jídla</div>
+            <div class="food">Saláty</div>
+            <div class="food">Dezerty</div>
+        </div>
+    </nav>
+
+    <section>
+        <div clas="paperBox">
+            <div class="paper">
+                <div class="mainfoodsDiv">
+                    <div class="mainfoods">Saláty</div>
+                </div>
+                <div class="foodPreview"></div>
+                <div class="foodPreview"></div>
+                <div class="foodPreview"></div>
+            </div>
+         </div>
+    </section>
+
+    <aside class="filterDiv">
+        <form action="">
+            <div class="filter">
+                <input type="checkbox" id="filter" name="filter1" value="Vegan">
+                <id for="filter1">Vegan</id></br>
+            </div>
+            <div class="filter">
+                <input type="checkbox" id="filter" name="filter2" value="GlutenFree">
+                <id for="filter2">GlutenFree</id></br>
+            </div>
+            <div class="filter">
+            <input type="checkbox" id="filter" name="filter3" value="LactoseFree">
+            <id for="filter3">LactoseFree</id></br>
+            </div>
+        </form>
+    </aside>
+
+    <footer>
+        <div class="footer"></div>
+    </footer>
+
+</body>
+</html>
